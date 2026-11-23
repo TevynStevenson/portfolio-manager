@@ -30,7 +30,7 @@ public abstract class FixedAsset {
         this.marketValue = marketValue;
     }
 
-    public int getValue(){
+    public double getValue(){
         return 0;
     }
 
