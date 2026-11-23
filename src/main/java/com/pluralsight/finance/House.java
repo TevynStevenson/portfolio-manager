@@ -1,4 +1,4 @@
 package com.pluralsight.finance;
 
-public class House {
+public class House extends FixedAsset{
 }
