@@ -5,7 +5,7 @@ public class Jewelry extends FixedAsset{
         super(name, marketValue);
     }
 
-    //Add overridden getValue statement
+    //Add overridden getValue method
     @Override
     public double getValue(){
         return 0;

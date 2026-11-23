@@ -42,6 +42,7 @@ public class BankAccount implements Valuable {
         this.balance -= amount;
     }
 
+    //Add overridden get value method
     @Override
     public double getValue() {
         return 0;

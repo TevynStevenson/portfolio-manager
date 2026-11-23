@@ -5,7 +5,7 @@ public class Gold extends FixedAsset{
         super(name, marketValue);
     }
 
-    //Add overridden getValue()
+    //Add overridden getValue() method
     @Override
     public double getValue(){
         return 0;

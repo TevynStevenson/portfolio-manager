@@ -5,6 +5,7 @@ public class House extends FixedAsset{
         super(name, marketValue);
     }
 
+    //Add overridden get value method
     @Override
     public double getValue(){
         return 0;
