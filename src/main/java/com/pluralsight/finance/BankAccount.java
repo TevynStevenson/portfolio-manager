@@ -1,5 +1,7 @@
 package com.pluralsight.finance;
 
+import java.math.BigDecimal;
+
 public class BankAccount implements Valuable {
 
     private int accountNumber;
@@ -7,7 +9,9 @@ public class BankAccount implements Valuable {
     private double balance;
 
     public BankAccount(int accountNumber, String name, double balance) {
-
+        this.accountNumber = accountNumber;
+        this.name = name;
+        this.balance = balance;
     }
 
     public int getAccountNumber() {
@@ -43,9 +47,19 @@ public class BankAccount implements Valuable {
     }
 
     //Add overridden get value method
+    //Added big decimal getValue
     @Override
-    public double getValue() {
-        return 0;
+    //public double getValue()
+    public BigDecimal getValue() {
+        return BigDecimal.valueOf(balance);
+    }
+
+    //Add to string to print out Bank Account
+    @Override
+    public String toString() {
+        return "Account Number: " + accountNumber +
+                ", Name: " + name +
+                ", Balance: $" + balance;
     }
 
 

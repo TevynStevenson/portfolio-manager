@@ -1,5 +1,7 @@
 package com.pluralsight.finance;
 
+import java.math.BigDecimal;
+
 public abstract class FixedAsset {
 
     private String name;
@@ -30,10 +32,17 @@ public abstract class FixedAsset {
         this.marketValue = marketValue;
     }
 
-    public double getValue(){
-        return 0;
+
+    //Added BigDecimal instead of double
+    //public double getValue()
+    public BigDecimal getValue() {
+        return BigDecimal.valueOf(0);
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Asset Name : " +
+                " " + name + '\'' +
+                ", Market Value: " + "$" + marketValue ;
+    }
 }

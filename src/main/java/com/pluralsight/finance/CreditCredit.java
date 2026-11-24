@@ -1,5 +1,7 @@
 package com.pluralsight.finance;
 
+import java.math.BigDecimal;
+
 public class CreditCredit implements Valuable {
 
     private String name;
@@ -46,7 +48,8 @@ public class CreditCredit implements Valuable {
 
     //Add overridden get value method
     @Override
-    public double getValue() {
-        return 0;
+    //public double getValue()
+    public BigDecimal getValue() {
+        return BigDecimal.valueOf(0);
     }
 }
